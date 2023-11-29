@@ -1,5 +1,5 @@
 import React from 'react';
-import { Head, Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 
 interface HelloWorldProps {
     name: string;
@@ -7,7 +7,7 @@ interface HelloWorldProps {
 }
 
 const HelloWorld: React.FC<HelloWorldProps> = ({ name, className }) => {
-    return <Link href='https://inertiajs.com/' target='_blank' className={className}>Hello, {name}!</Link>;
+    return <a href='https://inertiajs.com/' target='_blank' className={className}>Hello, {name}!</a>;
 };
 
 const Hello: React.FC = () => {
