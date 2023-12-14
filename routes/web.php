@@ -39,4 +39,8 @@ Route::get('/hello', function () {
     return Inertia::render('Hello');
 });
 
+Route::get('/lazy', function () {
+    return Inertia::render('LazyPage');
+});
+
 require __DIR__ . '/auth.php';
